@@ -71,13 +71,13 @@ export default function ForgotPasswordPage() {
                 </svg>
               </div>
               <p className="text-sm text-gray-700 mb-4">
-                We&quot;ve sent password reset instructions to:
+                We"ve sent password reset instructions to:
               </p>
               <p className="text-lg font-medium text-gray-900 mb-6">
                 {email}
               </p>
               <p className="text-sm text-gray-500 mb-4">
-                If you don&quot;t see the email, check other places it might be, like your junk, spam, social, or other folders.
+                If you don"t see the email, check other places it might be, like your junk, spam, social, or other folders.
               </p>
               <div className="mt-6">
                 <Link
@@ -101,7 +101,7 @@ export default function ForgotPasswordPage() {
           Reset your password
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Enter your email address and we&apos;ll send you a link to reset your password.
+          Enter your email address and we"ll send you a link to reset your password.
         </p>
       </div>
 

@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function AdvancedSearchPage() {
   const router = useRouter();
@@ -41,7 +40,7 @@ export default function AdvancedSearchPage() {
     if (query || category !== 'all') {
       handleSearch({ query, category });
     }
-  }, [searchParams, handleSearch]);
+  }, [searchParams]);
   
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -611,12 +610,10 @@ export default function AdvancedSearchPage() {
                   {searchResults.map(service => (
                     <div key={service.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                       <div className="relative h-48 w-full">
-                        <Image 
+                        <img 
                           src={service.image} 
                           alt={service.title} 
                           className="w-full h-full object-cover"
-                          width={500}
-                          height={250}
                         />
                         <div className="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-700 shadow">
                           ${service.price}

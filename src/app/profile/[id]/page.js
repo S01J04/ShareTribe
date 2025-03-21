@@ -185,12 +185,10 @@ I've worked with clients ranging from startups to established companies across v
       {/* Cover Image */}
       <div className="relative h-64 w-full bg-gradient-to-r from-purple-600 to-indigo-600">
         {profile.coverImage && (
-          <Image 
+          <img 
             src={profile.coverImage} 
             alt="Cover" 
             className="h-full w-full object-cover opacity-40"
-            width={1920}
-            height={384}
           />
         )}
       </div>
@@ -203,12 +201,10 @@ I've worked with clients ranging from startups to established companies across v
               <div className="mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
                 <div className="relative">
                   <div className="h-32 w-32 bg-gray-200 rounded-full overflow-hidden border-4 border-white shadow">
-                    <Image 
+                    <img 
                       src={profile.avatar} 
                       alt={profile.name} 
                       className="h-full w-full object-cover"
-                      width={128}
-                      height={128}
                     />
                   </div>
                   <div className="absolute bottom-0 right-0 h-5 w-5 bg-green-500 rounded-full border-2 border-white"></div>
@@ -401,12 +397,10 @@ I've worked with clients ranging from startups to established companies across v
                         >
                           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                             <div className="h-48 bg-gray-200 relative">
-                              <Image 
+                              <img 
                                 src={service.image} 
                                 alt={service.title} 
                                 className="w-full h-full object-cover"
-                                width={500}
-                                height={250}
                               />
                               <div className="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-700 shadow">
                                 ${service.price}
@@ -453,12 +447,10 @@ I've worked with clients ranging from startups to established companies across v
                           <div className="flex justify-between mb-2">
                             <div className="flex items-center">
                               <div className="h-10 w-10 rounded-full overflow-hidden mr-3">
-                                <Image 
+                                <img 
                                   src={review.clientAvatar} 
                                   alt={review.clientName} 
                                   className="h-full w-full object-cover"
-                                  width={40}
-                                  height={40}
                                 />
                               </div>
                               <div>

@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function CreateServicePage() {
   const router = useRouter();
@@ -380,7 +379,7 @@ export default function CreateServicePage() {
                     <p className="mt-1 text-sm text-red-600 error-message">{errors.description}</p>
                   )}
                   <p className="mt-1 text-sm text-gray-500">
-                    Min. 50 characters. Be detailed and clear about what you&apos;re offering.
+                    Min. 50 characters. Be detailed and clear about what you're offering.
                   </p>
                 </div>
                 
@@ -539,11 +538,9 @@ export default function CreateServicePage() {
                   {formData.images.map(image => (
                     <div key={image.id} className="relative group">
                       <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
-                        <Image 
+                        <img 
                           src={image.url} 
                           alt={image.name}
-                          width={160}
-                          height={160}
                           className="object-cover h-40 w-full" 
                         />
                       </div>

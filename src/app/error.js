@@ -30,7 +30,7 @@ export default function Error({ error, reset }) {
         </div>
         <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">Something went wrong</h1>
         <p className="mt-2 text-lg text-gray-600 max-w-md mx-auto">
-          We&apos;re sorry, but we encountered an unexpected error while processing your request.
+          We're sorry, but we encountered an unexpected error while processing your request.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <button

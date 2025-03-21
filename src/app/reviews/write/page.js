@@ -307,7 +307,7 @@ export default function WriteReviewPage() {
                 <div className="ml-3 text-sm">
                   <label htmlFor="anonymous" className="font-medium text-gray-700">Post anonymously</label>
                   <p className="text-gray-500">
-                    If selected, your name will be hidden in the review. Instead, it will show as &quot;Anonymous User&quot;.
+                    If selected, your name will be hidden in the review. Instead, it will show as "Anonymous User".
                   </p>
                 </div>
               </div>

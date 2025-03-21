@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function MessagesPage() {
   const router = useRouter();
@@ -19,13 +18,13 @@ export default function MessagesPage() {
   
   useEffect(() => {
     fetchConversations();
-  }, [fetchConversations]);
+  }, []);
   
   useEffect(() => {
     if (activeConversation) {
       fetchMessages(activeConversation.id);
     }
-  }, [activeConversation, fetchMessages]);
+  }, [activeConversation]);
   
   useEffect(() => {
     scrollToBottom();
@@ -426,11 +425,9 @@ export default function MessagesPage() {
                           <div className="flex items-start space-x-3">
                             <div className="relative flex-shrink-0">
                               <div className="h-12 w-12 rounded-full">
-                                <Image
+                                <img
                                   src={conversation.participant.avatar}
                                   alt={conversation.participant.name}
-                                  width={48}
-                                  height={48}
                                   className="h-full w-full object-cover rounded-full"
                                 />
                               </div>
@@ -480,11 +477,9 @@ export default function MessagesPage() {
                   <div className="p-4 border-b border-gray-200 flex items-center space-x-3">
                     <div className="relative">
                       <div className="h-10 w-10 rounded-full">
-                        <Image
+                        <img
                           src={activeConversation.participant.avatar}
                           alt={activeConversation.participant.name}
-                          width={40}
-                          height={40}
                           className="h-full w-full object-cover rounded-full"
                         />
                       </div>
@@ -549,11 +544,9 @@ export default function MessagesPage() {
                                   {message.sender.id !== 'current-user' && (
                                     <div className="flex-shrink-0 mr-3">
                                       <div className="h-8 w-8 rounded-full">
-                                        <Image
+                                        <img
                                           src={message.sender.avatar}
                                           alt={message.sender.name}
-                                          width={32}
-                                          height={32}
                                           className="h-full w-full object-cover rounded-full"
                                         />
                                       </div>

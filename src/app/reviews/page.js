@@ -159,7 +159,7 @@ export default function ReviewsPage() {
             </Link>
           </div>
           <p className="text-gray-600">
-            Manage and view the reviews you&apos;ve received and given on the platform.
+            Manage and view the reviews you've received and given on the platform.
           </p>
         </div>
         
@@ -222,7 +222,7 @@ export default function ReviewsPage() {
                   </svg>
                   <h3 className="mt-2 text-sm font-medium text-gray-900">No reviews yet</h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    You haven&apos;t received any reviews yet. Reviews will appear here after clients review your services.
+                    You haven't received any reviews yet. Reviews will appear here after clients review your services.
                   </p>
                 </div>
               ) : (
@@ -280,7 +280,7 @@ export default function ReviewsPage() {
                   </svg>
                   <h3 className="mt-2 text-sm font-medium text-gray-900">No reviews given</h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    You haven&apos;t reviewed any services yet. After completing an order, you can leave a review for the service.
+                    You haven't reviewed any services yet. After completing an order, you can leave a review for the service.
                   </p>
                 </div>
               ) : (
@@ -345,7 +345,7 @@ export default function ReviewsPage() {
                   </svg>
                   <h3 className="mt-2 text-sm font-medium text-gray-900">No pending reviews</h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    You don&apos;t have any services to review at the moment. After a service is completed, you can leave a review here.
+                    You don't have any services to review at the moment. After a service is completed, you can leave a review here.
                   </p>
                 </div>
               ) : (
