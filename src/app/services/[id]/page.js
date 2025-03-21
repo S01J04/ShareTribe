@@ -35,7 +35,7 @@ export default function ServiceDetailPage() {
         seller: {
           id: 'seller-1',
           name: 'John Smith',
-          avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
+          avatar: 'https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_1280.png',
           level: 'Top Rated Plus',
           rating: 4.9,
           reviewCount: 243,
@@ -45,10 +45,10 @@ export default function ServiceDetailPage() {
           location: 'United States',
         },
         images: [
-          'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-          'https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-          'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-          'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+          'https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825_1280.jpg',
+          'https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg',
+          'https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg',
+          'https://cdn.pixabay.com/photo/2017/01/29/13/21/mobile-devices-2017980_1280.png'
         ],
         description: `
           <p>I will create a professional, modern, and responsive website using React, Next.js, and Tailwind CSS. My services include:</p>

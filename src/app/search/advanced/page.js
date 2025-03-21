@@ -105,7 +105,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'John Doe',
           sellerImage: '/avatars/john.jpg',
           sellerLevel: 'Top Rated',
-          image: 'https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg',
           deliveryTime: '7 days',
           location: 'New York, USA'
         },
@@ -120,7 +120,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'Sarah Johnson',
           sellerImage: '/avatars/sarah.jpg',
           sellerLevel: 'Rising Talent',
-          image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_1280.png',
           deliveryTime: '3 days',
           location: 'Los Angeles, USA'
         },
@@ -135,7 +135,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'Michael Brown',
           sellerImage: '/avatars/michael.jpg',
           sellerLevel: 'Level 2',
-          image: 'https://images.unsplash.com/photo-1528900873419-1a37793456dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg',
           deliveryTime: '10 days',
           location: 'Chicago, USA'
         },
@@ -150,7 +150,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'Emma Wilson',
           sellerImage: '/avatars/emma.jpg',
           sellerLevel: 'Level 1',
-          image: 'https://images.unsplash.com/photo-1520971981242-aaefdf239aa0?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_1280.jpg',
           deliveryTime: '2 days',
           location: 'Online'
         },
@@ -165,7 +165,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'Robert Garcia',
           sellerImage: '/avatars/robert.jpg',
           sellerLevel: 'Top Rated',
-          image: 'https://images.unsplash.com/photo-1556912172-45a7e95641ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2016/12/30/07/55/kitchen-1940174_1280.jpg',
           deliveryTime: '30 days',
           location: 'Miami, USA'
         },
@@ -180,7 +180,7 @@ export default function AdvancedSearchPage() {
           sellerName: 'David Miller',
           sellerImage: '/avatars/david.jpg',
           sellerLevel: 'Level 2',
-          image: 'https://images.unsplash.com/photo-1600566752355-9a79f2cd1049?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
+          image: 'https://cdn.pixabay.com/photo/2017/09/08/02/24/maintenance-2727889_1280.jpg',
           deliveryTime: '1 day',
           location: 'Denver, USA'
         }

@@ -30,8 +30,8 @@ export default function ProfilePage() {
         id: id,
         name: 'John Smith',
         title: 'Full Stack Developer & UI/UX Designer',
-        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
-        coverImage: 'https://images.unsplash.com/photo-1557682250-0b875eb9287d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
+        avatar: 'https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_1280.png',
+        coverImage: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg',
         location: 'San Francisco, CA',
         memberSince: 'June 2018',
         lastActive: '2 hours ago',
@@ -80,7 +80,7 @@ I've worked with clients ranging from startups to established companies across v
             id: 'service-1',
             title: 'Professional Website Development with React, Next.js and Tailwind CSS',
             description: 'I will create a modern, responsive website with the latest technologies to ensure fast performance and great user experience.',
-            image: 'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            image: 'https://cdn.pixabay.com/photo/2020/04/08/16/32/website-5017773_1280.jpg',
             price: 600,
             rating: 4.9,
             reviewCount: 43
@@ -89,7 +89,7 @@ I've worked with clients ranging from startups to established companies across v
             id: 'service-2',
             title: 'Custom Web Application Development',
             description: 'I will develop a tailored web application to meet your specific business needs with secure authentication and data management.',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            image: 'https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png',
             price: 1500,
             rating: 5.0,
             reviewCount: 21
@@ -98,7 +98,7 @@ I've worked with clients ranging from startups to established companies across v
             id: 'service-3',
             title: 'UI/UX Design for Web and Mobile Applications',
             description: 'I will create intuitive, user-friendly designs for your application with a focus on usability, accessibility, and modern aesthetics.',
-            image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            image: 'https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_1280.jpg',
             price: 800,
             rating: 4.8,
             reviewCount: 33
