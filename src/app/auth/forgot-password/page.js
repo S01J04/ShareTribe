@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
 export default function ForgotPasswordPage() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,9 +20,9 @@ export default function ForgotPasswordPage() {
     const newErrors = {};
     
     if (!email) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = 'Email is invalid';
+      newErrors.email = "Email is invalid";
     }
     
     return newErrors;
@@ -41,15 +41,15 @@ export default function ForgotPasswordPage() {
     
     try {
       // In a real app, we would make an API call to send the reset email
-      // For now, we'll simulate the process with a timeout
+      // For now, we"ll simulate the process with a timeout
       await new Promise(resolve => setTimeout(resolve, 1500));
       
-      console.log('Password reset email sent to:', email);
+      console.log("Password reset email sent to:", email);
       setIsSubmitted(true);
     } catch (error) {
-      console.error('Password reset error:', error);
+      console.error("Password reset error:", error);
       setErrors({
-        submit: 'Failed to send reset email. Please try again later.'
+        submit: "Failed to send reset email. Please try again later."
       });
     } finally {
       setIsSubmitting(false);
@@ -71,13 +71,13 @@ export default function ForgotPasswordPage() {
                 </svg>
               </div>
               <p className="text-sm text-gray-700 mb-4">
-                We've sent password reset instructions to:
+                We"ve sent password reset instructions to:
               </p>
               <p className="text-lg font-medium text-gray-900 mb-6">
                 {email}
               </p>
               <p className="text-sm text-gray-500 mb-4">
-                If you don't see the email, check other places it might be, like your junk, spam, social, or other folders.
+                If you don"t see the email, check other places it might be, like your junk, spam, social, or other folders.
               </p>
               <div className="mt-6">
                 <Link
@@ -101,7 +101,7 @@ export default function ForgotPasswordPage() {
           Reset your password
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Enter your email address and we'll send you a link to reset your password.
+          Enter your email address and we"ll send you a link to reset your password.
         </p>
       </div>
 
@@ -138,7 +138,7 @@ export default function ForgotPasswordPage() {
                   value={email}
                   onChange={handleChange}
                   className={`appearance-none block w-full px-3 py-2 border ${
-                    errors.email ? 'border-red-300' : 'border-gray-300'
+                    errors.email ? "border-red-300" : "border-gray-300"
                   } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                   placeholder="your@email.com"
                 />
@@ -153,7 +153,7 @@ export default function ForgotPasswordPage() {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
-                  isSubmitting ? 'bg-indigo-400' : 'bg-indigo-600 hover:bg-indigo-700'
+                  isSubmitting ? "bg-indigo-400" : "bg-indigo-600 hover:bg-indigo-700"
                 } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
               >
                 {isSubmitting ? (
@@ -165,7 +165,7 @@ export default function ForgotPasswordPage() {
                     Sending...
                   </span>
                 ) : (
-                  'Send reset link'
+                  "Send reset link"
                 )}
               </button>
             </div>
