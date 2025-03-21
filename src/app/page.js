@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function HomePage() {
   const router = useRouter();
@@ -58,11 +59,15 @@ export default function HomePage() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
-            alt="Team collaborating on a project"
-          />
+          <div className="lg:w-1/2 relative h-96 lg:h-auto">
+            <Image
+              src="/images/hero-image.jpg"
+              alt="Freelance professionals"
+              width={800}
+              height={600}
+              className="h-full w-full object-cover rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
 
@@ -72,7 +77,7 @@ export default function HomePage() {
           <div className="text-center">
             <h2 className="text-base text-pink-600 font-semibold tracking-wide uppercase">Popular Services</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              What's trending right now
+              What&apos;s trending right now
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Discover the most in-demand services on our platform
@@ -104,10 +109,12 @@ export default function HomePage() {
             ].map((service, index) => (
               <div key={index} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 w-full overflow-hidden">
-                  <img 
+                  <Image 
                     src={service.image} 
                     alt={service.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    width={870}
+                    height={870}
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4 text-white">
@@ -187,7 +194,7 @@ export default function HomePage() {
                 <div className="ml-16">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Secure Payments</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    Our escrow system ensures payment is released only when you're satisfied with the work.
+                    Our escrow system ensures payment is released only when you&apos;re satisfied with the work.
                   </p>
                 </div>
               </div>
@@ -201,7 +208,7 @@ export default function HomePage() {
                 <div className="ml-16">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Track Progress</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    Stay updated on your project's progress with transparent milestones and delivery tracking.
+                    Stay updated on your project&apos;s progress with transparent milestones and delivery tracking.
                   </p>
                 </div>
               </div>
@@ -253,11 +260,15 @@ export default function HomePage() {
                     <p className="text-gray-700 mb-4">{testimonial.quote}</p>
                   </div>
                   <div className="flex items-center">
-                    <img 
-                      src={testimonial.avatar} 
-                      alt={testimonial.name} 
-                      className="h-10 w-10 rounded-full mr-3"
-                    />
+                    <div className="h-16 w-16 rounded-full overflow-hidden">
+                      <Image
+                        src="/images/testimonials/client.jpg"
+                        alt="Satisfied client"
+                        width={64}
+                        height={64}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <div>
                       <h4 className="text-sm font-medium text-gray-900">{testimonial.name}</h4>
                       <p className="text-xs text-gray-500">{testimonial.title}</p>

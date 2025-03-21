@@ -228,11 +228,15 @@ export default function ServiceDetailPage() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
               <div className="relative h-96 w-full">
-                <img 
-                  src={service.images[0]} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover"
-                />
+                <div className={`h-96 overflow-hidden ${index === activeImage ? 'block' : 'hidden'}`}>
+                  <Image
+                    src={image}
+                    alt={`Service image ${index + 1}`}
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
               
               <div className="p-6">
@@ -240,9 +244,11 @@ export default function ServiceDetailPage() {
                 
                 <div className="flex items-center mb-6">
                   <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
-                    <img 
-                      src={service.seller.avatar} 
-                      alt={service.seller.name} 
+                    <Image
+                      src={service.seller.avatar}
+                      alt={service.seller.name}
+                      width={48}
+                      height={48}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -265,9 +271,11 @@ export default function ServiceDetailPage() {
                       key={index} 
                       className="h-24 w-36 flex-shrink-0 rounded-md overflow-hidden border border-gray-200"
                     >
-                      <img 
-                        src={image} 
-                        alt={`${service.title} ${index + 1}`} 
+                      <Image
+                        src={image}
+                        alt={`${service.title} ${index + 1}`}
+                        width={144}
+                        height={96}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -411,7 +419,7 @@ export default function ServiceDetailPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h3 className="text-sm font-medium text-gray-900 mb-3">What's Included</h3>
+                  <h3 className="text-sm font-medium text-gray-900 mb-3">What&apos;s Included</h3>
                   <ul className="space-y-2">
                     {service.packages[selectedPackage].features.map((feature, index) => (
                       <li key={index} className="flex items-start">
@@ -443,11 +451,13 @@ export default function ServiceDetailPage() {
                 <h3 className="text-sm font-medium text-gray-900 mb-3">About the Seller</h3>
                 
                 <div className="flex items-center mb-4">
-                  <div className="h-12 w-12 rounded-full overflow-hidden mr-3">
-                    <img 
-                      src={service.seller.avatar} 
-                      alt={service.seller.name} 
-                      className="w-full h-full object-cover"
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={service.seller.avatar}
+                      alt={service.seller.name}
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 rounded-full"
                     />
                   </div>
                   <div>

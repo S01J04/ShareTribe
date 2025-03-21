@@ -31,7 +31,7 @@ export default function GlobalError({ error, reset }) {
             </div>
             <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">Something went wrong!</h1>
             <p className="mt-2 text-lg text-gray-600 max-w-md mx-auto">
-              We've encountered a critical error. Please try reloading the application.
+              We&apos;ve encountered a critical error. Please try reloading the application.
             </p>
             <div className="mt-8">
               <button

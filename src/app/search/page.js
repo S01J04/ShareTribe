@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function SearchPage() {
   const router = useRouter();
@@ -414,10 +415,12 @@ export default function SearchPage() {
                   {searchResults.map((service) => (
                     <div key={service.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                       <div className="relative h-48 w-full">
-                        <img 
+                        <Image 
                           src={service.image} 
                           alt={service.title} 
                           className="w-full h-full object-cover"
+                          width={500}
+                          height={250}
                         />
                         <div className="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-700 shadow">
                           ${service.price}
