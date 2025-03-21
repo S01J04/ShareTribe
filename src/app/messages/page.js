@@ -19,13 +19,13 @@ export default function MessagesPage() {
   
   useEffect(() => {
     fetchConversations();
-  }, []);
+  }, [fetchConversations]);
   
   useEffect(() => {
     if (activeConversation) {
       fetchMessages(activeConversation.id);
     }
-  }, [activeConversation]);
+  }, [activeConversation, fetchMessages]);
   
   useEffect(() => {
     scrollToBottom();

@@ -41,7 +41,7 @@ export default function AdvancedSearchPage() {
     if (query || category !== 'all') {
       handleSearch({ query, category });
     }
-  }, [searchParams]);
+  }, [searchParams, handleSearch]);
   
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
