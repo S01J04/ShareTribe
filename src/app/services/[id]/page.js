@@ -14,6 +14,7 @@ export default function ServiceDetailPage() {
   const [error, setError] = useState(null);
   const [selectedPackage, setSelectedPackage] = useState('standard');
   const [currentTab, setCurrentTab] = useState('description');
+  const [activeImage, setActiveImage] = useState(0);
   
   useEffect(() => {
     fetchServiceDetails(params.id);
@@ -228,15 +229,17 @@ export default function ServiceDetailPage() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
               <div className="relative h-96 w-full">
-                <div className={`h-96 overflow-hidden ${index === activeImage ? 'block' : 'hidden'}`}>
-                  <Image
-                    src={image}
-                    alt={`Service image ${index + 1}`}
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                {service.images.map((image, index) => (
+                  <div key={index} className={`h-96 overflow-hidden ${index === activeImage ? 'block' : 'hidden'}`}>
+                    <Image
+                      src={image}
+                      alt={`Service image ${index + 1}`}
+                      width={800}
+                      height={600}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                ))}
               </div>
               
               <div className="p-6">
@@ -269,7 +272,8 @@ export default function ServiceDetailPage() {
                   {service.images.map((image, index) => (
                     <div 
                       key={index} 
-                      className="h-24 w-36 flex-shrink-0 rounded-md overflow-hidden border border-gray-200"
+                      className={`h-24 w-36 flex-shrink-0 rounded-md overflow-hidden border cursor-pointer ${index === activeImage ? 'border-purple-500' : 'border-gray-200'}`}
+                      onClick={() => setActiveImage(index)}
                     >
                       <Image
                         src={image}
