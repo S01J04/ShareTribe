@@ -88,28 +88,28 @@ export default function HomePage() {
             {[
               {
                 title: 'Logo Design',
-                image: 'https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_1280.png',
+                image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
                 category: 'Design'
               },
               {
                 title: 'Web Development',
-                image: 'https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png',
+                image: 'https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
                 category: 'Development'
               },
               {
                 title: 'Social Media',
-                image: 'https://cdn.pixabay.com/photo/2019/11/27/14/06/wallet-4657688_1280.png',
+                image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
                 category: 'Marketing'
               },
               {
                 title: 'Content Writing',
-                image: 'https://cdn.pixabay.com/photo/2016/02/19/11/25/laptop-1209008_1280.jpg',
+                image: 'https://images.unsplash.com/photo-1520971081497-3aa1750677b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80',
                 category: 'Writing'
               }
             ].map((service, index) => (
               <div key={index} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 w-full overflow-hidden">
-                  <Image 
+          <Image
                     src={service.image} 
                     alt={service.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -261,7 +261,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center">
                     <div className="h-16 w-16 rounded-full overflow-hidden">
-                      <Image
+          <Image
                         src="/images/testimonials/client.jpg"
                         alt="Satisfied client"
                         width={64}
@@ -303,7 +303,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </div>
+    </div>
     </>
   );
 }

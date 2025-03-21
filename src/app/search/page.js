@@ -46,7 +46,7 @@ export default function SearchPage() {
           reviewCount: 124,
           sellerName: 'John Doe',
           sellerAvatar: '/images/users/john.jpg',
-          image: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '7 days'
         },
         {
@@ -58,7 +58,7 @@ export default function SearchPage() {
           reviewCount: 89,
           sellerName: 'Sarah Johnson',
           sellerAvatar: '/images/users/sarah.jpg',
-          image: 'https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045_1280.png',
+          image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '3 days'
         },
         {
@@ -70,7 +70,7 @@ export default function SearchPage() {
           reviewCount: 56,
           sellerName: 'Michael Brown',
           sellerAvatar: '/images/users/michael.jpg',
-          image: 'https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1528900873419-1a37793456dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '10 days'
         },
         {
@@ -82,7 +82,7 @@ export default function SearchPage() {
           reviewCount: 42,
           sellerName: 'Emma Wilson',
           sellerAvatar: '/images/users/emma.jpg',
-          image: 'https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1520971981242-aaefdf239aa0?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '2 days'
         },
         {
@@ -94,7 +94,7 @@ export default function SearchPage() {
           reviewCount: 35,
           sellerName: 'Robert Garcia',
           sellerAvatar: '/images/users/robert.jpg',
-          image: 'https://cdn.pixabay.com/photo/2016/12/30/07/55/kitchen-1940174_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1556912172-45a7e95641ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '30 days'
         },
         {
@@ -106,7 +106,7 @@ export default function SearchPage() {
           reviewCount: 52,
           sellerName: 'David Miller',
           sellerAvatar: '/images/users/david.jpg',
-          image: 'https://cdn.pixabay.com/photo/2017/09/08/02/24/maintenance-2727889_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1600566752355-9a79f2cd1049?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '1 day'
         },
         {
@@ -118,7 +118,7 @@ export default function SearchPage() {
           reviewCount: 38,
           sellerName: 'Jessica Lee',
           sellerAvatar: '/images/users/jessica.jpg',
-          image: 'https://cdn.pixabay.com/photo/2016/11/29/12/13/phone-1869510_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '5 days'
         },
         {
@@ -130,7 +130,7 @@ export default function SearchPage() {
           reviewCount: 47,
           sellerName: 'Thomas Wright',
           sellerAvatar: '/images/users/thomas.jpg',
-          image: 'https://cdn.pixabay.com/photo/2020/04/16/04/15/social-media-5048275_1280.jpg',
+          image: 'https://images.unsplash.com/photo-1569017388730-020b5f80a004?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80',
           deliveryTime: '14 days'
         }
       ];

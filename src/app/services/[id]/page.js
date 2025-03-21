@@ -14,7 +14,6 @@ export default function ServiceDetailPage() {
   const [error, setError] = useState(null);
   const [selectedPackage, setSelectedPackage] = useState('standard');
   const [currentTab, setCurrentTab] = useState('description');
-  const [activeImage, setActiveImage] = useState(0);
   
   useEffect(() => {
     fetchServiceDetails(params.id);
@@ -36,7 +35,7 @@ export default function ServiceDetailPage() {
         seller: {
           id: 'seller-1',
           name: 'John Smith',
-          avatar: 'https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_1280.png',
+          avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
           level: 'Top Rated Plus',
           rating: 4.9,
           reviewCount: 243,
@@ -46,10 +45,10 @@ export default function ServiceDetailPage() {
           location: 'United States',
         },
         images: [
-          'https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825_1280.jpg',
-          'https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg',
-          'https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg',
-          'https://cdn.pixabay.com/photo/2017/01/29/13/21/mobile-devices-2017980_1280.png'
+          'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          'https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
         ],
         description: `
           <p>I will create a professional, modern, and responsive website using React, Next.js, and Tailwind CSS. My services include:</p>
@@ -229,17 +228,15 @@ export default function ServiceDetailPage() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
               <div className="relative h-96 w-full">
-                {service.images.map((image, index) => (
-                  <div key={index} className={`h-96 overflow-hidden ${index === activeImage ? 'block' : 'hidden'}`}>
-                    <Image
-                      src={image}
-                      alt={`Service image ${index + 1}`}
-                      width={800}
-                      height={600}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                ))}
+                <div className={`h-96 overflow-hidden ${index === activeImage ? 'block' : 'hidden'}`}>
+                  <Image
+                    src={image}
+                    alt={`Service image ${index + 1}`}
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
               
               <div className="p-6">
@@ -272,8 +269,7 @@ export default function ServiceDetailPage() {
                   {service.images.map((image, index) => (
                     <div 
                       key={index} 
-                      className={`h-24 w-36 flex-shrink-0 rounded-md overflow-hidden border cursor-pointer ${index === activeImage ? 'border-purple-500' : 'border-gray-200'}`}
-                      onClick={() => setActiveImage(index)}
+                      className="h-24 w-36 flex-shrink-0 rounded-md overflow-hidden border border-gray-200"
                     >
                       <Image
                         src={image}
